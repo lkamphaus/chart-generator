@@ -1,0 +1,23 @@
+body {
+  background-color: #0C0C0C;
+}
+
+.logo {
+  height: 100px;
+}
+
+.link {
+  color: #fff !important;
+}
+
+.app {
+  margin: 20px;
+}
+
+.chartCol {
+  margin: 100px;
+}
+
+.removeBtn {
+  margin-right: 10px;
+}
