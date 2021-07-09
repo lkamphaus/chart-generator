@@ -75,10 +75,31 @@ body {
   text-decoration: none;
 }
 
+.spanLink {
+  color: #000;
+  display: inline-block;
+  font-weight: 400;
+  background-color: #BB86FC;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 .btnColor {
   background-color: #BB86FC;
   border-color: #BB86FC;
   color: #000;
+  margin-right: 20px;
+}
+
+.btnColor:hover {
+  background-color: #BB86FC;
+  border-color: #BB86FC;
+  color: #000;
+  opacity: 72%;
+  margin-right: 20px;
 }
 
 .btnColor:hover {
@@ -86,6 +107,7 @@ body {
   border-color: #BB86FC;
   opacity: 72%;
   color: #000;
+  margin-right: 20px;
 }
 
 .btnColor:active {
@@ -93,6 +115,7 @@ body {
   /* border-color: #BB86FC; */
   border: 3px solid #BB86FC !important;
   color: #000 !important;
+  margin-right: 20px;
 }
 
 .btnColor:focus {
@@ -100,6 +123,7 @@ body {
   /* border-color: #BB86FC; */
   border: 3px solid #BB86FC !important;
   color: #000 !important;
+  margin-right: 20px;
 }
 
 .inputColor {
