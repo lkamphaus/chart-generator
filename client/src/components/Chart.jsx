@@ -55,7 +55,7 @@ const Chart = ( props ) => {
       <Card.Body className={style.chartBody}>
         <Card.Title>{chartName}</Card.Title>
         <Card.Text> by {firstName}</Card.Text>
-        <CopyToClipboard text={`http://localhost:7000/share-chart/${_id}`}>
+        <CopyToClipboard text={`https://arcane-ocean-78103.herokuapp.com/share-chart/${_id}`}>
           <Button
             className={style.btnColor}
             onClick={() => {
