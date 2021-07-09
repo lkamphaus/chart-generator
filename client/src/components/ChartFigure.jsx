@@ -1,50 +1,19 @@
 import React from 'react';
-import { BarChart, Bar } from 'recharts';
+import ChartType from './ChartType.jsx'
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Sector, ResponsiveContainer } from 'recharts';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import style from '.././styles.css';
 
-const ChartFigure = ( inputList ) => {
-
-  console.log('hi', inputList);
-  const test = inputList.inputList
-
-  const data = test.map(item => {
-    return {
-      name: item.barName,
-      uv: item.barValue
-    }
-  });
-
-
-
-  // [
-  //   {
-  //     name: 'Page A',
-  //     uv: 4000
-  //   },
-  //   {
-  //     name: 'Page B',
-  //     uv: 3000
-  //   },
-  //   {
-  //     name: 'Page C',
-  //     uv: 2000
-  //   },
-  //   {
-  //     name: 'Page D',
-  //     uv: 2780
-  //   },
-  //   {
-  //     name: 'Page E',
-  //     uv: 1890
-  //   },
-  // ];
-
+const ChartFigure = ( props ) => {
+  const chartDetails = {
+    chartPoints: props.chartPoints,
+    chartColor: props.chartColor,
+    chartType: props.chartType
+  }
   return (
     <div>
-      <BarChart width={300} height={300} data={data}>
-        <Bar dataKey="uv" fill="#F79A6B" />
-        <Bar dataKey="pv" fill="#fff" />
-      </BarChart>
-
+      <ChartType chartDetails={chartDetails}/>
     </div>
   )
 }
