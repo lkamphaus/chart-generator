@@ -2,7 +2,7 @@ const express = require('express');
 const query = require('./db/controllers/charts.js');
 require('./db')
 
-const port = 7000;
+const port = process.env.PORT || 7000;
 const path = require('path');
 
 let app = express();
