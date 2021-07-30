@@ -11,6 +11,16 @@
 Chart Generator is a single-page application that allows users to transform raw data into an interactive chart that can be shared across the web.
 
 ### ✨ Demo
+Create Chart
+
+![Create Chart](create-chart.gif)
+<br />
+
+Share Chart 
+
+![Share Chart](share-chart.gif)
+
+
 
 ### 🧪 Technologies
 * Core-js : Version 3.15.2,
